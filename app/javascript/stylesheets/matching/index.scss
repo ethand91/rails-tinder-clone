@@ -1,0 +1,63 @@
+.matching-index-page {
+  max-width: 414px;
+  margin: 0 auto;
+}
+
+.matching {
+  &-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #616161;
+    margin: 8px 0 8px 16px;
+  }
+
+  &-num {
+    font-size: 14px;
+    color: #363636;
+    margin: 8px 0 8px 16px;
+  }
+
+  &__list {
+    min-height: 500px;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    &-default-img {
+      height: 74px;
+      width: 74px;
+      border-radius: 50%;
+      background-image: url("~profile_default_img_128.png");
+      background-size: contain;
+    }
+
+    &-img {
+      height: 74px;
+      width: 74px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &-name {
+      margin-left: 12px;
+      font-weight: bold;
+      color: #616161;
+    }
+  }
+}
+
+.chat-btn {
+  background-color: #FD3378;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+@media (min-width: 414px) {
+  .matching-index-page {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin: 8px auto;
+  }
+}

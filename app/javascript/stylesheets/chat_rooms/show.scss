@@ -1,0 +1,98 @@
+.chat-room-show-page {
+  max-width: 414px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .chat-room {
+    &__header {
+      border-bottom: 1px solid #fafafa;
+    }
+    &__partner {
+      display: flex;
+      align-items: center;
+      &-name {
+        margin-left: 8px;
+        font-weight: bold;
+        color: #616161;
+        vertical-align: middle;
+      }
+      &-default-img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-image: url("~profile_default_img_128.png");
+        background-size: contain;
+      }
+      &-img {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    &__message-form {
+      margin-top: auto;
+      border-top: 1px solid #e8e8e8;
+      padding: 24px 24px 0 24px;
+      width: 100%;
+      &_textarea {
+        width: 100%;
+        border: none;
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.chat-message {
+  &__partner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &-default-img {
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background-image: url("~profile_default_img_128.png");
+      background-size: contain;
+      margin-left: 8px;
+    }
+    &-img {
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      margin-left: 8px;
+    }
+  }
+  &__content {
+    margin: 4px 8px 4px;
+    padding: 8px 12px;
+    max-width: 70%;
+    color: #555;
+    font-size: 16px;
+    border-radius: 8px;
+    background: #f1f1f1;
+  }
+  &__current-user {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.main-color-bg {
+  background: #FD3378;
+  color: #fff;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+@media (min-width: 414px) {
+  .chat-room-show-page {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin: 8px auto;
+  }
+}
